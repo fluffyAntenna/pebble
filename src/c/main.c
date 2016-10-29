@@ -1,15 +1,14 @@
 #include <pebble.h>
 static Window *s_main_window;
 
-static void init() {
-  
   static void main_window_load(Window *window) {
 
   }
   static void main_window_unload(Window *window) {
 
   }
-  
+
+static void init() {
   s_main_window = window_create();
   
   window_set_window_handlers(s_main_window, (WindowHandlers) {
