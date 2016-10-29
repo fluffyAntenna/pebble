@@ -1,0 +1,21 @@
+{
+    "author": "jacobsc897@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "watchface",
+    "pebble": {
+        "displayName": "watchface",
+        "enableMultiJS": false,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "uuid": "1a24e697-3930-4a72-ad58-eb380574bdc4",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
