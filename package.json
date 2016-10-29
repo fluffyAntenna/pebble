@@ -11,6 +11,12 @@
         "resources": {
             "media": [
                 {
+                    "file": "images/nbg.png",
+                    "name": "IMAGE_TEXTBOX_NBG",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
                     "file": "images/background.png",
                     "name": "IMAGE_BITMAP_BACKGROUND",
                     "targetPlatforms": null,

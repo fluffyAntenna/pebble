@@ -11,7 +11,7 @@ static void main_window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
   
   // Create GBitmap
-  s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BITMAP_BACKGROUND);
+  s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_TEXTBOX_NBG);
   
   // Create BitmapLayer to display the GBitmap
   s_background_layer = bitmap_layer_create(bounds);
