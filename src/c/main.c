@@ -2,11 +2,23 @@
 static Window *s_main_window;
 static TextLayer *s_time_layer;
 static GFont s_time_font;
+static BitmapLayer *s_background_layer;
+static GBitmap *s_background_bitmap;
 
 static void main_window_load(Window *window) {
   // Get information about the Window
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
+  
+  // Create GBitmap
+  s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BITMAP_BACKGROUND);
+  
+  // Create BitmapLayer to display the GBitmap
+  s_background_layer = bitmap_layer_create(bounds);
+  
+  // Set the bitmap onto the layer and add to the window
+  bitmap_layer_set_bitmap(s_background_layer, s_background_bitmap);
+  layer_add_child(window_layer, bitmap_layer_get_layer(s_background_layer));
 
   // Create the TextLayer with specific bounds
   s_time_layer = text_layer_create(
@@ -28,6 +40,11 @@ static void main_window_load(Window *window) {
 static void main_window_unload(Window *window) {
  text_layer_destroy(s_time_layer);
   fonts_unload_custom_font(s_time_font);
+  // Destroy GBitmap
+gbitmap_destroy(s_background_bitmap);
+
+// Destroy BitmapLayer
+bitmap_layer_destroy(s_background_layer);
 }
 
 static void update_time() {
@@ -60,6 +77,7 @@ static void init() {
   
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
   update_time();
+  window_set_background_color(s_main_window, GColorBlack);
   
 }
 
