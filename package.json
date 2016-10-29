@@ -13,7 +13,7 @@
                 {
                     "characterRegex": "[0-9:.]",
                     "file": "fonts/Impact.ttf",
-                    "name": "FONT_IMPACT_BOLD_NONE_24",
+                    "name": "FONT_IMPACT_BOLD_NONE_56",
                     "targetPlatforms": null,
                     "type": "font"
                 }
