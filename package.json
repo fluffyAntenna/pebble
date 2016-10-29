@@ -1,20 +1,25 @@
 {
-    "author": "jacobsc897@gmail.com",
+    "author": "dragonborn2649@gmail.com",
     "dependencies": {},
     "keywords": [],
-    "name": "watchface",
+    "name": "watchface-1",
     "pebble": {
-        "displayName": "watchface",
-        "enableMultiJS": false,
+        "displayName": "WatchFace 1",
+        "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
         "resources": {
             "media": []
         },
         "sdkVersion": "3",
-        "uuid": "1a24e697-3930-4a72-ad58-eb380574bdc4",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "01cc5062-31bd-49a3-a074-90d4c15290c5",
         "watchapp": {
-            "watchface": false
+            "watchface": true
         }
     },
     "version": "1.0.0"
