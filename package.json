@@ -9,15 +9,7 @@
         "messageKeys": [],
         "projectType": "native",
         "resources": {
-            "media": [
-                {
-                    "characterRegex": "[0-9:.]",
-                    "file": "fonts/Impact.ttf",
-                    "name": "FONT_IMPACT_BOLD_NONE_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                }
-            ]
+            "media": []
         },
         "sdkVersion": "3",
         "targetPlatforms": [
